@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            size: 18px;
+            font-weight: bold;
+        }
+        h1{
+            size: 25px;
+            color: yellow;
+            font-family: "Audiowide", sans-serif;
+        }
+        body{
+            background-color: lightblue;
+        }
+        legend{
+            color: black;
+            font-weight: bold;
+        }
+        input{
+            border-radius: 10px;
+        }
+
+        a{
+        text-decoration: none;
+        color: white;
+        border: 2px solid yellow;
+        border-radius: 3px;
+        padding: 3px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: black;
+            
+        }
+
+        #bola{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        }
+        #contenedor2{
+        text-align: left;
+        padding-left: 120px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Información</h1>
+    <form action="formulario.php" method="post">
+    <fieldset style="border: 3px solid yellow;">
+    <legend style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Sus Datos:</legend>
+        <p>
+        <label for="nom_ape">Nombre y apellidos:</label>
+        <input type="text" maxlength="50">
+        </p>
+
+        <p>
+            <label for="contra">Contraseña:</label>
+            <input type="password" maxlength="8">
+        </p>
+
+        <p>
+            <label for="usuario">Email de contacto:</label>
+            <input type="text" maxlength="20" placeholder="anonimo@ejemplo.com" >
+        </p>
+
+        <p>
+            <label for="nivel">Nivel:</label>
+        </p>
+
+        <p>
+            <input type="radio" id="radio" name="radio">
+            <label for="radio" name="radio" id="radio">Profesional</label>
+        </p>
+
+        <p>
+            <input type="radio" id="radio" name="radio" checked>
+            <label  for="radio" name="radio" id="radio">Avanzado</label>
+        </p>
+
+        <p>
+            <input type="radio" id="radio" name="radio">
+            <label for="radio" name="radio" id="radio">Principiante</label>
+        </p>
+
+        <p>
+            <label for="nac">Nacionalidad</label>
+            <select name="nac" id="nac">
+                <option value="0"></option>
+                <option value="esp">España</option>
+                <option value="ru">Reino Unido</option>
+                <option value="ita">Italia</option>
+                <option value="hol">Holanda</option>
+            </select>
+            
+        </p>
+        <p id="contenedor2">
+        <img id="bola" src="https://thumbs.dreamstime.com/b/el-mundo-se%C3%B1ala-negocio-por-medio-de-una-bandera-internacional-48580678.jpg" alt="">
+        </p>
+    </fieldset>
+        
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar datos">
+        </p>
+
+        <p id="parrafo">
+            <a href="index.html">Volver a la página principal</a>
+        </p>
+    </form>
+</body>
+</html>
